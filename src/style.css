@@ -1,8 +1,31 @@
-.characters {
-    font-weight: bold;
-    
+/* Style for the title */
+h1 {
+    font-family: "sans-serif";
+    color: white;
+    background-color: black;
+    text-align: center;
+    padding: 20px;
+    font-size: 2em;
+    margin: 0;
 }
 
+/* Style for the unordered list */
+ul {
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    list-style-type: none;
+    font-family: "sans-serif";
+    font-size: 1.5em;
+}
+
+/* Style for the list items */
 li {
-    list-style-type: square;
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Optional: Add hover effect for list items */
+li:hover {
+    background-color: #f0f0f0;
 }
