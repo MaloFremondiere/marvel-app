@@ -1,19 +1,14 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 
-const AboutPage = () => {
-  // Utilisé pour changer le titre de la page
-  useEffect(() => {
-    document.title = "About | Marvel App"; // Modification du titre de la page
-  }, []);
 
+function AboutPage() {
   return (
-    <div>
+    <>
+      
       <h2>About Us</h2>
-      <p>
-        We are a team of Marvel fans who love to create awesome apps !
-      </p>
-    </div>
+      <p>We are a team of marvel</p>
+    </>
   );
-};
+}
 
-export default AboutPage;
+export default AboutPage
