@@ -17,9 +17,10 @@ const Layout = () => {
                 <Outlet />
             </main>
             <footer>
-                <p>Marvel App - 2024 - { version }</p>
+                <p>Marvel App - 2024 - { version } </p>
             </footer>
         </>
     );
 };
+
 export default Layout;
