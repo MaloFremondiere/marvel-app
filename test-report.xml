@@ -1,3 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testExecutions version="1">
+  <file path="C:\Users\mfremo02\MARVEL_APP_OLD\src\components\Chart-utils.test.js">
+    <testCase name="prepareData prepareData with empty data" duration="6"/>
+    <testCase name="prepareData prepareData with data" duration="1"/>
+    <testCase name="prepareData prepareData with data with undefined values" duration="1"/>
+    <testCase name="prepareData prepareData with data with null values" duration="0"/>
+  </file>
+  <file path="C:\Users\mfremo02\MARVEL_APP_OLD\src\components\chart-utils.test.js">
+    <testCase name="prepareData prepareData with empty data" duration="8"/>
+    <testCase name="prepareData prepareData with data" duration="1"/>
+    <testCase name="prepareData prepareData with data with undefined values" duration="0"/>
+    <testCase name="prepareData prepareData with data with null values" duration="0"/>
+  </file>
+  <file path="C:\Users\mfremo02\MARVEL_APP_OLD\src\api\characters-api.test.js">
+    <testCase name="getCharacters should return characters sorted by name in asc order" duration="7"/>
+    <testCase name="getCharacters should return characters sorted by name in desc order" duration="1"/>
+    <testCase name="getCharacters should return characters sorted by modified in asc order" duration="1"/>
+    <testCase name="getCharacters should return characters sorted by modified in desc order" duration="1"/>
+    <testCase name="getCharacters should return characters sorted by name in ascending order by default" duration="0"/>
+    <testCase name="getCharacterById should return the character with the given id" duration="0"/>
+    <testCase name="getCharacterById should throw an error if the character with the given id is not found" duration="7"/>
+    <testCase name="fetchCharacters should fetch characters sorted by name in asc order" duration="6"/>
+    <testCase name="fetchCharacters should fetch characters sorted by name in desc order" duration="1"/>
+    <testCase name="fetchCharacters should fetch characters sorted by modified in asc order" duration="0"/>
+    <testCase name="fetchCharacters should fetch characters sorted by modified in desc order" duration="1"/>
+    <testCase name="fetchCharacters should fetch characters sorted by name in ascending order by default" duration="0"/>
+  </file>
+  <file path="C:\Users\mfremo02\MARVEL_APP_OLD\src\components\D3PieChart.test.jsx">
+    <testCase name="D3PieChart renders D3PieChart with label and value" duration="51"/>
+  </file>
+  <file path="C:\Users\mfremo02\MARVEL_APP_OLD\src\components\RechartsPieChart.test.jsx">
+    <testCase name="RechartsPieChart renders RechartsPieChart" duration="59"/>
+  </file>
+  <file path="C:\Users\mfremo02\MARVEL_APP_OLD\src\pages\CharacterDetailPage.test.jsx">
+    <testCase name="CharacterDetailPage render CharacterDetailPage component" duration="71"/>
+  </file>
 </testExecutions>
