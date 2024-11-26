@@ -1,38 +1,58 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testExecutions version="1">
-  <file path="C:\Users\mfremo02\MARVEL_APP_OLD\src\components\Chart-utils.test.js">
-    <testCase name="prepareData prepareData with empty data" duration="6"/>
-    <testCase name="prepareData prepareData with data" duration="1"/>
-    <testCase name="prepareData prepareData with data with undefined values" duration="1"/>
-    <testCase name="prepareData prepareData with data with null values" duration="0"/>
-  </file>
   <file path="C:\Users\mfremo02\MARVEL_APP_OLD\src\components\chart-utils.test.js">
-    <testCase name="prepareData prepareData with empty data" duration="8"/>
+    <testCase name="prepareData prepareData with empty data" duration="15"/>
     <testCase name="prepareData prepareData with data" duration="1"/>
     <testCase name="prepareData prepareData with data with undefined values" duration="0"/>
     <testCase name="prepareData prepareData with data with null values" duration="0"/>
   </file>
   <file path="C:\Users\mfremo02\MARVEL_APP_OLD\src\api\characters-api.test.js">
-    <testCase name="getCharacters should return characters sorted by name in asc order" duration="7"/>
+    <testCase name="getCharacters should return characters sorted by name in asc order" duration="13"/>
     <testCase name="getCharacters should return characters sorted by name in desc order" duration="1"/>
     <testCase name="getCharacters should return characters sorted by modified in asc order" duration="1"/>
-    <testCase name="getCharacters should return characters sorted by modified in desc order" duration="1"/>
-    <testCase name="getCharacters should return characters sorted by name in ascending order by default" duration="0"/>
+    <testCase name="getCharacters should return characters sorted by modified in desc order" duration="0"/>
+    <testCase name="getCharacters should return characters sorted by name in ascending order by default" duration="1"/>
     <testCase name="getCharacterById should return the character with the given id" duration="0"/>
-    <testCase name="getCharacterById should throw an error if the character with the given id is not found" duration="7"/>
-    <testCase name="fetchCharacters should fetch characters sorted by name in asc order" duration="6"/>
-    <testCase name="fetchCharacters should fetch characters sorted by name in desc order" duration="1"/>
-    <testCase name="fetchCharacters should fetch characters sorted by modified in asc order" duration="0"/>
+    <testCase name="getCharacterById should throw an error if the character with the given id is not found" duration="34"/>
+    <testCase name="fetchCharacters should fetch characters sorted by name in asc order" duration="2"/>
+    <testCase name="fetchCharacters should fetch characters sorted by name in desc order" duration="0"/>
+    <testCase name="fetchCharacters should fetch characters sorted by modified in asc order" duration="3"/>
     <testCase name="fetchCharacters should fetch characters sorted by modified in desc order" duration="1"/>
-    <testCase name="fetchCharacters should fetch characters sorted by name in ascending order by default" duration="0"/>
+    <testCase name="fetchCharacters should fetch characters sorted by name in ascending order by default" duration="1"/>
+  </file>
+  <file path="C:\Users\mfremo02\MARVEL_APP_OLD\src\components\NumberOfCharacters.test.jsx">
+    <testCase name="renders &quot;There is no character&quot; when characters array is empty" duration="38"/>
+    <testCase name="renders the correct number of characters when characters array is not empty" duration="4"/>
+  </file>
+  <file path="C:\Users\mfremo02\MARVEL_APP_OLD\src\pages\ContactPage.test.jsx">
+    <testCase name="ContactPage should render the ContactPage component" duration="42"/>
+    <testCase name="ContactPage should have the correct page title" duration="5"/>
+    <testCase name="ContactPage should render the contact email link" duration="7"/>
+  </file>
+  <file path="C:\Users\mfremo02\MARVEL_APP_OLD\src\pages\AboutPage.test.jsx">
+    <testCase name="AboutPage sets the document title correctly" duration="74"/>
+  </file>
+  <file path="C:\Users\mfremo02\MARVEL_APP_OLD\src\components\CharactersDetail.test.jsx">
+    <testCase name="renders the character detail correctly" duration="45"/>
+    <testCase name="does not render the character thumbnail image when not provided" duration="4"/>
+    <testCase name="renders &quot;no character&quot; when character is not provided" duration="2"/>
+  </file>
+  <file path="C:\Users\mfremo02\MARVEL_APP_OLD\src\components\CharactersList.test.jsx">
+    <testCase name="CharactersList renders without crashing" duration="22"/>
+    <testCase name="CharactersList renders a list of characters" duration="19"/>
+    <testCase name="CharactersList renders links with correct href" duration="4"/>
+    <testCase name="CharactersList renders an empty list when no characters are provided" duration="5"/>
   </file>
   <file path="C:\Users\mfremo02\MARVEL_APP_OLD\src\components\D3PieChart.test.jsx">
-    <testCase name="D3PieChart renders D3PieChart with label and value" duration="51"/>
+    <testCase name="D3PieChart renders D3PieChart with label and value" duration="63"/>
+  </file>
+  <file path="C:\Users\mfremo02\MARVEL_APP_OLD\src\pages\CharactersPage.test.jsx">
+    <testCase name="render CharactersPage component" duration="78"/>
   </file>
   <file path="C:\Users\mfremo02\MARVEL_APP_OLD\src\components\RechartsPieChart.test.jsx">
-    <testCase name="RechartsPieChart renders RechartsPieChart" duration="59"/>
+    <testCase name="RechartsPieChart renders RechartsPieChart" duration="63"/>
   </file>
   <file path="C:\Users\mfremo02\MARVEL_APP_OLD\src\pages\CharacterDetailPage.test.jsx">
-    <testCase name="CharacterDetailPage render CharacterDetailPage component" duration="71"/>
+    <testCase name="CharacterDetailPage render CharacterDetailPage component" duration="75"/>
   </file>
 </testExecutions>
