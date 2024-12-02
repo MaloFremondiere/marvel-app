@@ -1,57 +1,32 @@
 import '@testing-library/jest-dom';
-import React from 'react';
-import { render } from '@testing-library/react';
-import { BrowserRouter as Router } from 'react-router-dom';
+import { render, screen } from '@testing-library/react';
+import { BrowserRouter } from 'react-router-dom';
 import { CharactersList } from './CharactersList';
 
-describe('CharactersList', () => {
-    it('renders without crashing', () => {
-        render(
-            <Router>
-                <CharactersList />
-            </Router>
-        );
-    });
+test('renders an empty list when no characters are provided', () => {
+    render(<CharactersList />, { wrapper: BrowserRouter });
+    const listElement = screen.getByRole('list');
+    expect(listElement).toBeEmptyDOMElement();
+});
 
-    it('renders a list of characters', () => {
-        const characters = [
-            { id: 1, name: 'Iron Man' },
-            { id: 2, name: 'Thor' },
-        ];
+test('renders an empty list when characters is empty', () => {
+    render(<CharactersList characters={[]} />, { wrapper: BrowserRouter });
+    const listElement = screen.getByRole('list');
+    expect(listElement).toBeEmptyDOMElement();
+});
 
-        const { getByText } = render(
-            <Router>
-                <CharactersList characters={characters} />
-            </Router>
-        );
+test('renders the correct number of list items when characters are provided', () => {
+    const characters = [
+        { id: '1', name: 'Thor' },
+        { id: '2', name: 'Captain America' },
+    ];
+    render(<CharactersList characters={characters} />, { wrapper: BrowserRouter });
+    const listItems = screen.getAllByRole('listitem');
+    expect(listItems).toHaveLength(characters.length);
 
-        expect(getByText('Iron Man')).toBeInTheDocument();
-        expect(getByText('Thor')).toBeInTheDocument();
-    });
-
-    it('renders links with correct href', () => {
-        const characters = [
-            { id: 1, name: 'Iron Man' },
-            { id: 2, name: 'Thor' },
-        ];
-
-        const { getByText } = render(
-            <Router>
-                <CharactersList characters={characters} />
-            </Router>
-        );
-
-        expect(getByText('Iron Man').closest('a')).toHaveAttribute('href', '/characters/1');
-        expect(getByText('Thor').closest('a')).toHaveAttribute('href', '/characters/2');
-    });
-
-    it('renders an empty list when no characters are provided', () => {
-        const { container } = render(
-            <Router>
-                <CharactersList characters={[]} />
-            </Router>
-        );
-
-        expect(container.querySelector('ul#characters').children.length).toBe(0);
+    characters.forEach(character => {
+        const linkElement = screen.getByText(character.name);
+        expect(linkElement).toBeInTheDocument();
+        expect(linkElement.closest('a')).toHaveAttribute('href', `/characters/${character.id}`);
     });
 });
