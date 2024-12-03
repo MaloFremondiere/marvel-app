@@ -1,19 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testExecutions version="1">
-  <file path="C:\Users\mfremo02\MARVEL_APP_OLD\src\components\CharactersDetail.test.jsx">
-    <testCase name="renders the character detail correctly" duration="39"/>
-    <testCase name="does not render the character thumbnail image when not provided" duration="3"/>
-    <testCase name="renders &quot;no character&quot; when character is not provided" duration="3"/>
-  </file>
-  <file path="C:\Users\mfremo02\MARVEL_APP_OLD\src\components\CharactersList.test.jsx">
-    <testCase name="renders an empty list when no characters are provided" duration="44"/>
-    <testCase name="renders an empty list when characters is empty" duration="8"/>
-    <testCase name="renders the correct number of list items when characters are provided" duration="14"/>
-  </file>
-  <file path="C:\Users\mfremo02\MARVEL_APP_OLD\src\pages\CharactersPage.test.jsx">
-    <testCase name="render CharactersPage component" duration="72"/>
-  </file>
-  <file path="C:\Users\mfremo02\MARVEL_APP_OLD\src\pages\CharacterDetailPage.test.jsx">
-    <testCase name="CharacterDetailPage render CharacterDetailPage component" duration="80"/>
+  <file path="C:\Users\mfremo02\MARVEL_APP_OLD\src\pages\CompareCharactersPage.test.jsx">
+    <testCase name="CompareCharactersPage renders loading state initially" duration="106"/>
+    <testCase name="CompareCharactersPage renders compare characters page" duration="18"/>
+    <testCase name="CompareCharactersPage renders character options in select elements" duration="33"/>
+    <testCase name="CompareCharactersPage updates radar chart on character selection change" duration="50"/>
   </file>
 </testExecutions>
