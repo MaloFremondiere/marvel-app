@@ -26,7 +26,7 @@ const CompareCharactersPage = () => {
     }, []);
 
     if (!characters.length || !option1 || !option2) {
-        return <div>Loading...</div>;
+        return <div>Loading</div>;
     }
 
     // Transform the characters to array of label/value objects
@@ -59,7 +59,7 @@ const CompareCharactersPage = () => {
             <p style={centerStyle}>
                 <select
                     data-testid='select-character-1'
-                    value={characters.indexOf(option1)}
+                    value={option1.value}
                     onChange={(event) => setOption1(characters[event.target.value])}
                 >
                     {options.map((option) => (
@@ -71,7 +71,7 @@ const CompareCharactersPage = () => {
                 with&nbsp;
                 <select
                     data-testid='select-character-2'
-                    value={characters.indexOf(option2)}
+                    value={option2.value}
                     onChange={(event) => setOption2(characters[event.target.value])}
                 >
                     {options.map((option) => (
@@ -85,10 +85,6 @@ const CompareCharactersPage = () => {
             <div data-testid="radar-chart">
                 <RadarChartCompare data={data} />
             </div>
-
-            <p style={centerStyle}>
-                {option1.name} vs {option2.name}
-            </p>
         </>
     );
 };

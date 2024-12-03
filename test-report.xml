@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testExecutions version="1">
   <file path="C:\Users\mfremo02\MARVEL_APP_OLD\src\pages\CompareCharactersPage.test.jsx">
+    <testCase name="CompareCharactersPage renders loading state initially" duration="106"/>
+    <testCase name="CompareCharactersPage renders compare characters page" duration="18"/>
+    <testCase name="CompareCharactersPage renders character options in select elements" duration="33"/>
+    <testCase name="CompareCharactersPage updates radar chart on character selection change" duration="50"/>
   </file>
 </testExecutions>
